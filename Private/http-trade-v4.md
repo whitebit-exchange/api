@@ -8,7 +8,7 @@
 * [Create stop-limit order](#create-stop-limit-order)
 * [Create stop-market order](#create-stop-market-order)
 * [Cancel order](#cancel-order)
-* [Query unexecuted orders](#query-unexecuted-orders)
+* [Query unexecuted orders](#query-unexecutedactive-orders)
 * [Query executed order history](#query-executed-order-history)
 * [Query executed order deals](#query-executed-order-deals)
 * [Query executed orders by market](#query-executed-orders-by-market)
