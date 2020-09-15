@@ -169,7 +169,7 @@ ___
 ### Kline
 
 ```
-[GET] /api/v1/public/ticker?market=BTC_USDT&interval=1h
+[GET] /api/v1/public/kline?market=BTC_USDT&interval=1h
 ```
 This endpoint retrieves information about market kline.
 
