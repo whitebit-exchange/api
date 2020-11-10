@@ -203,7 +203,8 @@ market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | Amount of stock currency to buy or sell. Example: '0.001'
 price | String | **Yes** | Price in money currency. Example: '9800'
-clientOrderId | String | **No** | Custom order id. This is the custom identifier you can use for your order. Format of the field: letters and numbers only. You can not use the same identifier for your order more than once in the next 24 hours.
+clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+                                
 
 **Request BODY raw:**
 ```json5

@@ -123,8 +123,7 @@ market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | Amount of stock currency to buy or sell. Example: '0.001'
 price | String | **Yes** | Price in money currency. Example: '9800'
-clientOrderId | String | **No** | Custom order id. This is the custom identifier you can use for your order. Format of the field: letters and numbers only. You can not use the same identifier for your order more than once in the next 24 hours.
-
+clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.                 
 
 **Request BODY raw:**
 ```json5
@@ -172,7 +171,7 @@ Error codes:
 * `3` - incorrect price (it is less than or equals zero or its precision is too big)
 * `4` - incorrect taker fee (it is less than zero or its precision is too big)
 * `5` - incorrect maker fee (it is less than zero or its precision is too big)
-* `6` - incorrect clientOrderId (not a valid string or you have already used this identifier in the past 24 hours already)
+* `6` - incorrect clientOrderId (invalid string or not unique id)
 
 ```json5
 {
@@ -313,8 +312,8 @@ Name | Type | Mandatory | Description
 market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | ⚠️Amount of **`money`** currency to **buy** or amount in **`stock`** currency to **sell**. Example: '0.01' for buy and '0.0001' for sell.
-clientOrderId | String | **No** | Custom order id. This is the custom identifier which you can use for your order. Format of the field: letters and numbers only. You can not use the same identifier for your order more than once in the next 24 hours.
-
+clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+                                  
 **Request BODY raw:**
 ```json5
 {
@@ -370,7 +369,7 @@ Error codes:
 * `3` - incorrect price (it is less than or equals zero or its precision is too big)
 * `4` - incorrect taker fee (it is less than zero or its precision is too big)
 * `5` - incorrect maker fee (it is less than zero or its precision is too big)
-* `6` - incorrect clientOrderId (not a valid string or you have already used this identifier in the past 24 hours already)
+* `6` - incorrect clientOrderId (invalid string or not unique id)
 
 ```json5
 {
@@ -497,8 +496,8 @@ side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | Amount of stock currency to buy or sell. Example: '0.001'
 price | String | **Yes** | Price in money currency. Example: '9800'
 activation_price | String | **Yes** | Activation price in money currency. Example: '10000'
-clientOrderId | String | **No** | Custom order id. This is the custom identifier which you can use for your order. Format of the field: letters and numbers only. You can not use the same identifier for your order more than once in the next 24 hours.
-
+clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+                                  
 **Request BODY raw:**
 ```json5
 {
@@ -547,7 +546,7 @@ Error codes:
 * `3` - incorrect price (it is less than or equals zero or its precision is too big)
 * `4` - incorrect taker fee (it is less than zero or its precision is too big)
 * `5` - incorrect maker fee (it is less than zero or its precision is too big)
-* `6` - incorrect clientOrderId (not a valid string or you have already used this identifier in the past 24 hours already)
+* `6` - incorrect clientOrderId (invalid string or not unique id)
 
 ```json5
 {
@@ -704,8 +703,8 @@ market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | ⚠️Amount of **`money`** currency to **buy** or amount in **`stock`** currency to **sell**. Example: '0.01' for buy and '0.0001' for sell.
 activation_price | String | **Yes** | Activation price in money currency. Example: '10000'
-clientOrderId | String | **No** | Custom order id. This is the custom identifier which you can use for your order. Format of the field: letters and numbers only. You can not use the same identifier for your order more than once in the next 24 hours.
-
+clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+                                  
 **Request BODY raw:**
 ```json5
 {
@@ -762,7 +761,7 @@ Error codes:
 * `3` - incorrect price (it is less than or equals zero or its precision is too big)
 * `4` - incorrect taker fee (it is less than zero or its precision is too big)
 * `5` - incorrect maker fee (it is less than zero or its precision is too big)
-* `6` - incorrect clientOrderId (not a valid string or you have already used this identifier in the past 24 hours already)
+* `6` - incorrect clientOrderId (invalid string or not unique id)
 
 ```json5
 {
