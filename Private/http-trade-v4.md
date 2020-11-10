@@ -123,7 +123,7 @@ market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | Amount of stock currency to buy or sell. Example: '0.001'
 price | String | **Yes** | Price in money currency. Example: '9800'
-clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.                 
+clientOrderId | String | **No** | Identifier should be unique and contain letters, dashes or numbers only. The identifier must be unique for the next 24 hours.                 
 
 **Request BODY raw:**
 ```json5
@@ -312,7 +312,7 @@ Name | Type | Mandatory | Description
 market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | ⚠️Amount of **`money`** currency to **buy** or amount in **`stock`** currency to **sell**. Example: '0.01' for buy and '0.0001' for sell.
-clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+clientOrderId | String | **No** | Identifier should be unique and contain letters, dashes or numbers only. The identifier must be unique for the next 24 hours.
                                   
 **Request BODY raw:**
 ```json5
@@ -496,7 +496,7 @@ side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | Amount of stock currency to buy or sell. Example: '0.001'
 price | String | **Yes** | Price in money currency. Example: '9800'
 activation_price | String | **Yes** | Activation price in money currency. Example: '10000'
-clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+clientOrderId | String | **No** | Identifier should be unique and contain letters, dashes or numbers only. The identifier must be unique for the next 24 hours.
                                   
 **Request BODY raw:**
 ```json5
@@ -703,7 +703,7 @@ market | String | **Yes** | Available market. Example: BTC_USDT
 side | String | **Yes** | Order type. Variables: 'buy' / 'sell' Example: 'buy'
 amount | String | **Yes** | ⚠️Amount of **`money`** currency to **buy** or amount in **`stock`** currency to **sell**. Example: '0.01' for buy and '0.0001' for sell.
 activation_price | String | **Yes** | Activation price in money currency. Example: '10000'
-clientOrderId | String | **No** | Identifier should be unique and contain letters or numbers only. The identifier must be unique for the next 24 hours.
+clientOrderId | String | **No** | Identifier should be unique and contain letters, dashes or numbers only. The identifier must be unique for the next 24 hours.
                                   
 **Request BODY raw:**
 ```json5
