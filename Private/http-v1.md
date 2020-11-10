@@ -367,7 +367,7 @@ clientOrderId | String | **No** | Identifier should be unique and contain letter
     "code": 0,
     "errors": {
         "clientOrderId": [
-            "This client order id is already used by the current account. It will become available in 59 seconds."
+            "This client order id is already used by the current account. It will become available in 24 hours (86400 seconds). "
         ]
     },
     "message": "Validation failed"
