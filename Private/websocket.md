@@ -314,7 +314,7 @@ Market should exist. The maximum limit is 100.
         "BTC_USDT", // market
         0,          // offset
         30          // limit
-    ]
+    ],
 }
 ```
 
@@ -342,7 +342,8 @@ All possible [order types](#order-types)
                 "left": "0.773232",         // Stock amount that left to be executed
                 "deal_stock": "0",          // Stock amount that executed
                 "deal_money": "0",          // Money amount that executed
-                "deal_fee": "0"             // Charged fee amount in money
+                "deal_fee": "0",            // Charged fee amount in money,
+                "client_order_id": "22"     // Client order identifier
             },
             ...
         ]
@@ -406,7 +407,8 @@ If new order instantly matches an order from orderbook, then you will receive on
             "left": "0.008026",          // Stock amount that left to be executed. 
             "deal_stock": "0.001974",    // Stock amount that executed
             "deal_money": "21.01544088", // Money amount that executed
-            "deal_fee": "2.101544088"    // Charged fee amount in money
+            "deal_fee": "2.101544088",   // Charged fee amount in money,
+            "client_order_id": "22"      // Custom client order id
         }
     ],
 }
@@ -485,7 +487,8 @@ All possible [order types](#order-types)
                 "amount": "0.633232",         // Stock amount
                 "deal_stock": "0.633232",     // Stock amount that executed
                 "deal_money": "5799.1069944", // Money amount that executed
-                "deal_fee": "5.7991069944"    // Charged fee amount in money
+                "deal_fee": "5.7991069944",   // Charged fee amount in money,
+                "client_order_id": "-a-a-a"   // Custom client order id identifier
             },
             ...
         ]
@@ -672,7 +675,8 @@ Market should exist. The maximum limit is 100.
         7425988844,        // Order ID
         "11399.24",        // Price
         "0.008256",        // Stock amount
-        "0.094112125440"   // Deal fee
+        "0.094112125440",  // Deal fee
+        "1234"             // Custom client order id
     ]
 }
 ```
