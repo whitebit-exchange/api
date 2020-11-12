@@ -6,6 +6,7 @@
 * [Assets](#asset-status-list)
 * [Orderbook](#orderbook)
 * [Recent Trades](#recent-trades)
+* [Server Time](#server-time)
 
     
 Base URL is https://whitebit.com
@@ -246,3 +247,39 @@ type | String | **No** | Can be buy or sell
 }
 ```
 ___
+
+___
+
+### Server Time
+
+```
+[GET] /api/v4/public/time
+```
+This endpoint retrieves the current server time.
+
+**Response is cached for:**
+_1 second_
+
+**Response:**
+```json5
+{
+  "time": 1605168359 
+}
+```
+### Server Time
+
+```
+[GET] /api/v4/public/ping
+```
+This endpoint retrieves the current API life-state.
+
+**Response is cached for:**
+_1 second_
+
+**Response:**
+```json5
+[
+  "pong"
+]
+```
+
